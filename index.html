@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
+    <meta  name="viewport" content="width=device-width, initial-scale=1">
     <title>Test</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="topnav">
-        <a class="active" href="#">Home</a>
-        <a href="picker">Picker</a>
-    </div>
-    <div class="partlist">
-        <table>
-            <thead>
-                <tr>
-                    <th>Component</th>
-                    <th>Selection</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="tractor.html">Tractor</td>
-                    <td>/GET Selection</td>
-                    <td>/GET Price</td>
-                </tr>
-                <tr>
-                    <td><a href="trailer.html">Trailer</a></td>
-                    <td>/GET Selection</td>
-                    <td>/GET Price</td> 
-                </tr>
-            </tbody>
-        </table>
+    <div class="main-wrapper">
+        <div class="topnav">
+            <a class="active" href="#">Home</a>
+            <a href="picker">Picker</a>
+        </div>
+        <div class="partlist">
+            <table class="main-table">
+                <colgroup>
+                    <col span="1" style="width: 15%;"/>
+                    <col span="1" style="width: 70%;"/>
+                    <col span="1" style="width: 15%;"/>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Selection</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="tractor.html">Tractor</td>
+                        <td>
+                            <select name="tractor-component" id="tractor-component">
+                                <option selected disabled hidden>Select...</option>
+                                <option value="Ford">Ford</option>
+                                <option value="John Deere">John Deare</option>
+                                <option value="massey ferguson">Massey Ferguson</option>
+                        </td>
+                        <td>/GET Price</td>
+                    </tr>
+                    <tr>
+                        <td><a href="trailer.html">Trailer</a></td>
+                        <td>
+                            <select name="trailer-component" id="trailer-component" width="100%">
+                                <option selected disabled hidden>Select...</option>
+                                <option value="o1">Option 1</option>
+                                <option value="02">Option 2</option>
+                                <option value="03">Option 3</option>
+                        </td>
+                        <td>/GET Price</td> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 </html>
